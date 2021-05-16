@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Connections">
+    <test name="Regression">
+         <classes>
+             <class name="com.framework.testcases.LoginToConn"/>           
+          </classes>
+     </test>
+      <test name="smoke">
+         <classes>
+             <class name="com.framework.testcases.LoginToConn"/>           
+          </classes>
+     </test>
+
+     
+      <!-- Test -->
+</suite> <!-- Suite -->
