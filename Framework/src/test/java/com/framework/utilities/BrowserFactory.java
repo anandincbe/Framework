@@ -10,8 +10,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * @author anandmule
@@ -20,17 +23,21 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BrowserFactory {
 
 	public static WebDriver startApplication(WebDriver driver, String browserName, String appURL) {
-
+		
+		
 		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/anandmule/Anand_Workspace/Framework/Drivers/chromedriver");
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", "/Users/anandmule/Anand_Workspace/Framework/Drivers/chromedriver");
 			driver = new ChromeDriver();
 		}
 		else if (browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "/Users/anandmule/Anand_Workspace/Framework/Drivers/geckodriver");
+			WebDriverManager.firefoxdriver().setup();
+//			System.setProperty("webdriver.gecko.driver", "/Users/anandmule/Anand_Workspace/Framework/Drivers/geckodriver");
 			driver = new FirefoxDriver();
 		}
 		else if (browserName.equalsIgnoreCase("IE")) {
-
+			WebDriverManager.iedriver().setup();
+			driver= new InternetExplorerDriver();
 		} 
 		else {
 			System.out.println("We do not support this type of Browser");

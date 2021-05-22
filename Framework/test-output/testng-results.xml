@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="3" failed="0" total="6" passed="3">
+<testng-results skipped="3" failed="0" total="3" passed="0">
   <reporter-output>
-    <line>
-      <![CDATA[ajones11]]>
-    </line>
-    <line>
-      <![CDATA[Login successfully]]>
-    </line>
-    <line>
-      <![CDATA[Logout sucessfully]]>
-    </line>
-    <line>
-      <![CDATA[Logout sucessfully]]>
-    </line>
-    <line>
-      <![CDATA[Logout sucessfully]]>
-    </line>
   </reporter-output>
-  <suite name="Connections" duration-ms="50582" started-at="2021-05-16T14:48:55Z" finished-at="2021-05-16T14:49:46Z">
+  <suite name="Default suite" duration-ms="63" started-at="2021-05-22T15:06:17Z" finished-at="2021-05-22T15:06:17Z">
     <groups>
     </groups>
-    <test name="Regression" duration-ms="13" started-at="2021-05-16T14:48:55Z" finished-at="2021-05-16T14:48:55Z">
+    <test name="Default test" duration-ms="63" started-at="2021-05-22T15:06:17Z" finished-at="2021-05-22T15:06:17Z">
       <class name="com.framework.testcases.LoginToConn">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.framework.testcases.LoginToConn@3cb5cdba]" name="setup" is-config="true" duration-ms="0" started-at="2021-05-16T20:18:55Z" finished-at="2021-05-16T20:18:55Z">
-          <exception class="java.lang.NullPointerException">
+        <test-method status="PASS" signature="setupSuit()[pri:0, instance:com.framework.testcases.LoginToConn@3532ec19]" name="setupSuit" is-config="true" duration-ms="490" started-at="2021-05-22T20:36:17Z" finished-at="2021-05-22T20:36:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuit -->
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.framework.testcases.LoginToConn@3532ec19]" name="setup" is-config="true" duration-ms="0" started-at="2021-05-22T20:36:17Z" finished-at="2021-05-22T20:36:17Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: /Users/anandmule/Anand_Workspace/Framework/Drivers/geckodriver]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: /Users/anandmule/Anand_Workspace/Framework/Drivers/geckodriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.firefox.GeckoDriverService.access$100(GeckoDriverService.java:43)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:168)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:168)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
+	at com.framework.utilities.BrowserFactory.startApplication(BrowserFactory.java:30)
 	at com.framework.pages.BaseClass.setup(BaseClass.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -48,120 +50,44 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
 	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="LoginToConn()[pri:0, instance:com.framework.testcases.LoginToConn@3cb5cdba]" name="LoginToConn" duration-ms="1" started-at="2021-05-16T20:18:55Z" finished-at="2021-05-16T20:18:55Z">
+        <test-method status="SKIP" signature="LoginToConn()[pri:0, instance:com.framework.testcases.LoginToConn@3532ec19]" name="LoginToConn" duration-ms="1" started-at="2021-05-22T20:36:17Z" finished-at="2021-05-22T20:36:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToConn -->
-        <test-method status="SKIP" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.LoginToConn@3cb5cdba]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2021-05-16T20:18:55Z" finished-at="2021-05-16T20:18:55Z">
+        <test-method status="SKIP" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.LoginToConn@3532ec19]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2021-05-22T20:36:17Z" finished-at="2021-05-22T20:36:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method status="SKIP" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.LoginToConn@3cb5cdba]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2021-05-16T20:18:55Z" finished-at="2021-05-16T20:18:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="SKIP" signature="LoginToConn2()[pri:0, instance:com.framework.testcases.LoginToConn@3cb5cdba]" name="LoginToConn2" duration-ms="0" started-at="2021-05-16T20:18:55Z" finished-at="2021-05-16T20:18:55Z">
+        <test-method status="SKIP" signature="LoginToConn2()[pri:0, instance:com.framework.testcases.LoginToConn@3532ec19]" name="LoginToConn2" duration-ms="1" started-at="2021-05-22T20:36:17Z" finished-at="2021-05-22T20:36:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToConn2 -->
-        <test-method status="SKIP" signature="LoginToConn3()[pri:0, instance:com.framework.testcases.LoginToConn@3cb5cdba]" name="LoginToConn3" duration-ms="0" started-at="2021-05-16T20:18:55Z" finished-at="2021-05-16T20:18:55Z">
+        <test-method status="SKIP" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.LoginToConn@3532ec19]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2021-05-22T20:36:17Z" finished-at="2021-05-22T20:36:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownMethod -->
+        <test-method status="SKIP" signature="LoginToConn3()[pri:0, instance:com.framework.testcases.LoginToConn@3532ec19]" name="LoginToConn3" duration-ms="1" started-at="2021-05-22T20:36:17Z" finished-at="2021-05-22T20:36:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToConn3 -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.framework.testcases.LoginToConn@3cb5cdba]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-05-16T20:18:55Z" finished-at="2021-05-16T20:18:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.LoginToConn@3cb5cdba]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2021-05-16T20:18:55Z" finished-at="2021-05-16T20:18:55Z">
+        <test-method status="SKIP" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.LoginToConn@3532ec19]" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2021-05-22T20:36:17Z" finished-at="2021-05-22T20:36:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-      </class> <!-- com.framework.testcases.LoginToConn -->
-    </test> <!-- Regression -->
-    <test name="smoke" duration-ms="50448" started-at="2021-05-16T14:48:56Z" finished-at="2021-05-16T14:49:46Z">
-      <class name="com.framework.testcases.LoginToConn">
-        <test-method status="PASS" signature="setupSuit()[pri:0, instance:com.framework.testcases.LoginToConn@57829d67]" name="setupSuit" is-config="true" duration-ms="478" started-at="2021-05-16T20:18:55Z" finished-at="2021-05-16T20:18:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupSuit -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.framework.testcases.LoginToConn@57829d67]" name="setup" is-config="true" duration-ms="13615" started-at="2021-05-16T20:18:56Z" finished-at="2021-05-16T20:19:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="LoginToConn()[pri:0, instance:com.framework.testcases.LoginToConn@57829d67]" name="LoginToConn" duration-ms="14478" started-at="2021-05-16T20:19:09Z" finished-at="2021-05-16T20:19:24Z">
-          <reporter-output>
-            <line>
-              <![CDATA[ajones11]]>
-            </line>
-            <line>
-              <![CDATA[Login successfully]]>
-            </line>
-            <line>
-              <![CDATA[Logout sucessfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LoginToConn -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.LoginToConn@57829d67]" name="tearDownMethod" is-config="true" duration-ms="1081" started-at="2021-05-16T20:19:24Z" finished-at="2021-05-16T20:19:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginToConn status=SUCCESS method=LoginToConn.LoginToConn()[pri:0, instance:com.framework.testcases.LoginToConn@57829d67] output=ajones11]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="LoginToConn2()[pri:0, instance:com.framework.testcases.LoginToConn@57829d67]" name="LoginToConn2" duration-ms="9859" started-at="2021-05-16T20:19:25Z" finished-at="2021-05-16T20:19:35Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Logout sucessfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LoginToConn2 -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.LoginToConn@57829d67]" name="tearDownMethod" is-config="true" duration-ms="964" started-at="2021-05-16T20:19:35Z" finished-at="2021-05-16T20:19:36Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginToConn2 status=SUCCESS method=LoginToConn.LoginToConn2()[pri:0, instance:com.framework.testcases.LoginToConn@57829d67] output=Logout sucessfully]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="LoginToConn3()[pri:0, instance:com.framework.testcases.LoginToConn@57829d67]" name="LoginToConn3" duration-ms="9083" started-at="2021-05-16T20:19:36Z" finished-at="2021-05-16T20:19:45Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Logout sucessfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- LoginToConn3 -->
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.framework.testcases.LoginToConn@57829d67]" name="tearDownMethod" is-config="true" duration-ms="878" started-at="2021-05-16T20:19:45Z" finished-at="2021-05-16T20:19:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=LoginToConn3 status=SUCCESS method=LoginToConn.LoginToConn3()[pri:0, instance:com.framework.testcases.LoginToConn@57829d67] output=Logout sucessfully]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.testcases.LoginToConn@57829d67]" name="tearDown" is-config="true" duration-ms="486" started-at="2021-05-16T20:19:45Z" finished-at="2021-05-16T20:19:46Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.framework.testcases.LoginToConn@3532ec19]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-05-22T20:36:17Z" finished-at="2021-05-22T20:36:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.framework.testcases.LoginToConn -->
-    </test> <!-- smoke -->
-  </suite> <!-- Connections -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

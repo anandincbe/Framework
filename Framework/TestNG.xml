@@ -6,11 +6,7 @@
              <class name="com.framework.testcases.LoginToConn"/>           
           </classes>
      </test>
-      <test name="smoke">
-         <classes>
-             <class name="com.framework.testcases.LoginToConn"/>           
-          </classes>
-     </test>
+     
 
      
       <!-- Test -->

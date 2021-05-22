@@ -46,17 +46,7 @@ public class LoginToConn extends BaseClass {
 				dataProvide.getStringData(0, 0, 1));
 		logger.pass("Login successfully");
 		loginPage.logoutToConnection();
-	}
-	@Test(enabled=true)
-	public void LoginToConn3()  {
-		logger = report.createTest("Login to LoginToConn3");
-		System.out.println(dataProvide.getStringData("Login", 0, 0));		
-		LoginPage loginPage = new LoginPage(driver);
-		logger.info("Starting to login to connection3");
-		loginPage.loginToConnection(dataProvide.getStringData(0, 0, 0),
-				dataProvide.getStringData(0, 0, 1));
-		logger.pass("Login successfully");
-		loginPage.logoutToConnection();
+	
 	}
 }
 
