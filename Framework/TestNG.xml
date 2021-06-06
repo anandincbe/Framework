@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Connections">
+
     <test name="Regression">
+   <!--  <parameter name = "getBrowserName" value = "Firefox"/>
+    <parameter name = "getAppURL" value = "https://icmobilebvt.cnx.cwp.pnp-hcl.com/homepage/login/"/> -->
          <classes>
-             <class name="com.framework.testcases.LoginToConn"/>           
+        
+             <class name="com.framework.testcases.LoginToConn"/>       
           </classes>
      </test>
-     
+    
+</suite> 
 
-     
-      <!-- Test -->
-</suite> <!-- Suite -->

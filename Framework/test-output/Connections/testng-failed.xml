@@ -5,13 +5,8 @@
     <classes>
       <class name="com.framework.testcases.LoginToConn">
         <methods>
-          <include name="setup"/>
-          <include name="setup"/>
           <include name="setupSuit"/>
-          <include name="LoginToConn3"/>
-          <include name="tearDownMethod"/>
           <include name="LoginToConn2"/>
-          <include name="tearDown"/>
           <include name="LoginToConn"/>
         </methods>
       </class> <!-- com.framework.testcases.LoginToConn -->
